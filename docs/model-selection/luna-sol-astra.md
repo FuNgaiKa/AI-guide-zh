@@ -6,6 +6,8 @@
 
 > **最新体验追加（2026-09-22）：** 当前日常主力已经调整为 **Sol Medium**，复杂问题的设计与复核使用 **Astra Low**。下文原有结论与 2026-09-14 的体验继续保留，作为使用方式变化的历史记录；当前选择以 2026-09-22 的新增内容为准。
 
+> **最新建议补充（2026-09-24）：** 保留 Sol Medium + Astra Low 两个常用预设，但完整调用链分析、多根因比较和高风险复核可临时升级到 Astra Medium；如果选择器已经提供 GPT-6 Sol，则优先尝试 GPT-6 Sol Medium。
+
 ## 先说结论
 
 我的分工逻辑是：
@@ -42,6 +44,24 @@ DeepSWE 没有单独记录 Fast 模式，因此不能把榜单耗时当成 Luna 
 ## 持续更新的使用体验
 
 后续体验按日期追加并保留历史判断，方便观察模型、任务和个人使用方式发生变化后，结论是否改变。
+
+### 2026-09-24：保留双档习惯，高风险任务临时升档
+
+目前仍建议保留两个常用预设：**Sol Medium 负责日常开发，Astra Low 负责复杂问题的设计**。不必因为任务稍微变难就频繁切换模型。
+
+| 任务 | 建议 |
+| --- | --- |
+| TikTok、Facebook 工单排查；沿代码和日志定位错误；明确需求的实现与修复 | **Sol Medium**，从查询到修改尽量在同一任务中完成 |
+| Smart+、GMV Max 等新能力的方案；跨前后端或多系统边界；根因尚不明确的问题 | **Astra Low** 先梳理假设、取舍和验收点，再由 Sol Medium 落地 |
+| 权限、数据一致性、数据库变更及生产影响较大的最终方案或代码复核 | 临时升级到 **Astra Medium**，完整检查调用链和遗漏边界 |
+
+关键调整是：不要把所有“难题”都固定在 Astra Low。Low 适合先想清方向；需要完整追踪调用链、比较多个根因，或者为高风险改动做最终复核时，Medium 更值得使用。
+
+[OpenAI 模型选择指南](https://developers.openai.com/api/docs/guides/model-selection)将 Sol Medium 用于日常编码、研究和需要判断与完整性的工作，将 Astra Medium 用于需要广泛上下文、可靠交互和完整结果的项目。Astra Low 用于复杂设计仍是我的个人使用习惯，不是官方给出的固定映射。
+
+如果当前选择器已经提供 **GPT-6 Sol**，我会优先尝试 **GPT-6 Sol Medium + GPT-6 Astra Low**：官方已将 GPT-6 Sol 定位为复杂编码和 agent 工作流模型，并将它作为智能、成本之间的平衡选择。[GPT-6 Sol 官方说明](https://developers.openai.com/api/docs/models/gpt-6-sol)｜[OpenAI 模型目录](https://developers.openai.com/api/docs/models)
+
+文章后面的 DeepSWE 数据比较的是旧版本模型和不同推理档位，因此不能直接用来判断这组新搭配的优劣。Astra Medium 只作为少数高风险任务的临时升级，不需要成为第三个日常档。
 
 ### 2026-09-22：主力收敛为 Sol Medium + Astra Low
 
