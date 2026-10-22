@@ -43,9 +43,18 @@ DeepSWE 没有单独记录 Fast 模式，因此不能把榜单耗时当成 Luna 
 
 官方资料：[GPT-5.6 Luna](https://developers.openai.com/api/docs/models/gpt-5.6-luna) · [GPT-5.6 Sol](https://developers.openai.com/api/docs/models/gpt-5.6-sol) · [GPT-6 Astra](https://developers.openai.com/api/docs/models/gpt-6-astra)
 
-## 持续更新的使用体验
+## 持续更新使用体验
 
 后续体验按日期追加并保留历史判断，方便观察模型、任务和个人使用方式发生变化后，结论是否改变。
+
+### 2026-10-22：离职后用AI的习惯是什么？
+
+离职之后，用 AI 的时间比在职的时候少很多，毕竟不用写代码。
+消耗量也急剧减少，因此默认模型改成GPT 6 Astra low。
+给我的体验是，Astra 的信息检索能力、结论输出能力比 6.1 sol 要强不少，反应速度也很快。
+当然，缺点就是太贵了。
+
+辅助的 AI 是网页端的 ChatGPT 和 DeepSeek；如果是旅游相关的攻略，就是小红书的点点 AI，三者都是免费的。
 
 ### 2026-10-06：先解决“有没有”，再纠结“强不强”
 
